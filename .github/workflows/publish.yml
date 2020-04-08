@@ -27,6 +27,6 @@ jobs:
         env:
           CI: true
       - run: echo 'const v = process.env.GITHUB_REF.split("/").slice(-1)[0].substring(1), p = require("./package"); p.version = v; require("fs").writeFileSync("package.json", JSON.stringify(p,null,2));' | node -
-      - run: npm publish --access=public --tag
+      - run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
