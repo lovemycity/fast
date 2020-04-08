@@ -1,15 +1,13 @@
-/**
- * @package fast
- * @module @lovemycity/fast
- * @description
- *  Fast http api server.
- * @copyright
- *  Simon Kamenetskii <simon@kamenetskii.ru>
- */
 import {Server} from "./server";
 import {MethodDelete, MethodGet, MethodOptions, MethodPost, MethodPut} from "./method";
 import {statusText} from "./status";
 
+/**
+ * @name fast
+ * @description Main library entry point.
+ * @returns {Server}
+ * @public
+ */
 export function fast(): Server {
     return new Server();
 }
