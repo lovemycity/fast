@@ -10,9 +10,7 @@ import {Server} from "./server";
 import {MethodDelete, MethodGet, MethodOptions, MethodPost, MethodPut} from "./method";
 import {statusText} from "./status";
 
-module.exports = fast;
-
-function fast(): Server {
+export function fast(): Server {
     return new Server();
 }
 

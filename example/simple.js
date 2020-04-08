@@ -1,4 +1,4 @@
-const fast = require('../src/fast');
+const {fast} = require('../src/fast');
 
 fast()
     .use(async (ctx) => {
