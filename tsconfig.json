@@ -6,7 +6,8 @@
     "moduleResolution": "node",
     "sourceMap": false,
     "strict": false,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "declaration": true
   },
   "exclude": [
     "node_modules",
