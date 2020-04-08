@@ -6,7 +6,7 @@ import {Context} from "./context";
  * @interface
  */
 export interface Handler {
-    (ctx: Context): Promise<any>;
+    (ctx: Context): Promise<any> | any;
 }
 
 /**

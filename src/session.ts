@@ -1,6 +1,4 @@
-module.exports = {};
-
-class Session {
+export class Session {
     readonly _id: string;
     readonly _expires: Date;
     readonly _data: Map<string, any> = new Map();
@@ -10,7 +8,7 @@ class Session {
     }
 }
 
-interface SessionStore {
+export interface SessionStore {
     Get(id: string): Promise<Session>;
 
     Set(id: string, session: Session): Promise<Session>;

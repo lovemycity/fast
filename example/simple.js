@@ -22,6 +22,7 @@ fast()
         return [123]
     })
     .get('/err', async (ctx) => {
+        ctx.error(new Error('first error'));
         throw new Error('some error');
     })
     .listen(7000);

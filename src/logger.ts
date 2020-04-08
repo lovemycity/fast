@@ -27,7 +27,3 @@ export interface Logger {
 
     error(...args: Error[]): void
 }
-
-module.exports = {
-    DefaultLogger,
-};

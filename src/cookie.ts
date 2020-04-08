@@ -1,4 +1,4 @@
-class Cookie {
+export class Cookie {
     readonly name: string;
     readonly value: string;
     readonly domain: string;
@@ -35,8 +35,4 @@ class Cookie {
     }
 }
 
-type CookieSameSite = 'lax' | 'strict' | 'none' | '';
-
-module.exports = {
-    Cookie
-};
+export type CookieSameSite = 'lax' | 'strict' | 'none' | '';

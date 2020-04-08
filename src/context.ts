@@ -1,6 +1,7 @@
 import {IncomingMessage, ServerResponse} from "http";
 import {UrlObject} from "url";
 import {Logger} from "./logger";
+import {Err} from "./error";
 
 const {parse} = require('url');
 
@@ -103,7 +104,3 @@ export class Context {
         };
     }
 }
-
-module.exports = {
-    Context,
-};
