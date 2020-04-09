@@ -1,3 +1,4 @@
 .github
 example
 *.ts
+!*.d.ts
